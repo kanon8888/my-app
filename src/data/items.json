@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Watch Pro",
+    "description": "Advanced smart watch with health tracking and notifications.",
+    "price": 4999,
+    "image": "https://i.ibb.co.com/RGmrGS7k/shop-0.jpg",
+    "rating": 4.5,
+    "review": "Stylish design and very useful features."
+  },
+  {
+    "id": 2,
+    "title": "Wireless Earbuds X",
+    "description": "Noise cancelling wireless earbuds with long battery life.",
+    "price": 3499,
+    "image": "https://i.ibb.co.com/WvXt94jD/shop-1.jpg",
+    "rating": 4.3,
+    "review": "Sound quality is clear and bass is strong."
+  },
+  {
+    "id": 3,
+    "title": "Bluetooth Speaker Mini",
+    "description": "Portable Bluetooth speaker with deep bass sound.",
+    "price": 2599,
+    "image": "https://i.ibb.co.com/23yd483g/shop-2.jpg",
+    "rating": 4.6,
+    "review": "Very loud and perfect for travel."
+  },
+  {
+    "id": 4,
+    "title": "Smart LED Bulb",
+    "description": "WiFi enabled smart bulb with mobile app control.",
+    "price": 1199,
+    "image": "https://i.ibb.co.com/pBD8q48q/shop-3.jpg",
+    "rating": 4.2,
+    "review": "Easy to control and saves electricity."
+  },
+  {
+    "id": 5,
+    "title": "Laptop Cooling Pad",
+    "description": "High-speed cooling pad for gaming and office laptops.",
+    "price": 1899,
+    "image": "https://i.ibb.co.com/TqRfvntb/shop-4.jpg",
+    "rating": 4.4,
+    "review": "Laptop temperature reduced noticeably."
+  },
+  {
+    "id": 6,
+    "title": "Smart Power Bank",
+    "description": "Fast charging power bank with digital display.",
+    "price": 2799,
+    "image": "https://i.ibb.co.com/XZdWcNQq/shop-5.jpg",
+    "rating": 4.5,
+    "review": "Charging speed is very fast."
+  },
+  {
+    "id": 7,
+    "title": "Wireless Keyboard & Mouse",
+    "description": "Ergonomic wireless keyboard and mouse combo.",
+    "price": 3299,
+    "image": "https://i.ibb.co.com/1JXT5TnS/shop-6.jpg",
+    "rating": 4.3,
+    "review": "Comfortable for long-time use."
+  },
+  {
+    "id": 8,
+    "title": "Smart Security Camera",
+    "description": "HD security camera with night vision support.",
+    "price": 5499,
+    "image": "https://i.ibb.co.com/tPxvyV44/shop-7.jpg",
+    "rating": 4.6,
+    "review": "Clear video quality even at night."
+  },
+  {
+    "id": 9,
+    "title": "USB-C Hub Multiport",
+    "description": "Multiport USB-C hub for laptops and devices.",
+    "price": 2199,
+    "image": "https://i.ibb.co.com/k6yXKhXq/shop-8.jpg",
+    "rating": 4.4,
+    "review": "Very useful for MacBook users."
+  },
+  {
+    "id": 10,
+    "title": "Smart Phone Stand",
+    "description": "Adjustable phone stand for desk and office use.",
+    "price": 799,
+    "image": "https://i.ibb.co.com/nXVBXDX/shop-9.jpg",
+    "rating": 4.1,
+    "review": "Simple but very handy product."
+  }
+]
