@@ -9,7 +9,7 @@ import ProductCard from "@/components/cards/ProductsCard";
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedProduct, setSelectedProduct] = useState(null); // 👈 selected product
+  const [selectedProduct, setSelectedProduct] = useState(null); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,7 +20,7 @@ const ProductsPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Close product details
+  
   const closeDetails = () => setSelectedProduct(null);
 
   return (
@@ -30,7 +30,7 @@ const ProductsPage = () => {
           {Array(6).fill(0).map((_, i) => <ProductSkeleton key={i} />)}
         </div>
       ) : selectedProduct ? (
-        // ✅ Product details view
+        
         <div className="max-w-4xl mx-auto py-10">
           <button
             onClick={closeDetails}
@@ -55,13 +55,13 @@ const ProductsPage = () => {
           </div>
         </div>
       ) : (
-        // ✅ Products grid view
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {products.map((product) => (
             <ProductCard
               key={product.id}
               product={product}
-              onViewDetails={() => setSelectedProduct(product)} // click handler
+              onViewDetails={() => setSelectedProduct(product)}
             />
           ))}
         </div>

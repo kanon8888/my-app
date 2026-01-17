@@ -1,11 +1,14 @@
 import Image from "next/image";
 import productsData from "@/data/items.json";
+import { BsCartPlus } from "react-icons/bs";
 
-const ProductDetailPage = ({ params }) => {
-  const { id } = params;
-
+const ProductDetailPage = async ({ params }) => {
+  const { id } = await params;
+  console.log(id)
   const product = productsData.find(
+
     (p) => String(p.id) === String(id)
+
   );
 
   if (!product) {
@@ -37,13 +40,20 @@ const ProductDetailPage = ({ params }) => {
             Price: ৳ {product.price}
           </p>
 
-          <p>⭐ Rating: {product.rating}</p>
+          <p>Rating: {product.rating}</p>
 
           <p className="italic text-gray-600">
             “{product.review}”
           </p>
 
           <p>{product.description}</p>
+
+        </div>
+        <div>
+          <button className="btn btn-primary btn-sm flex items-center gap-2">
+                      <BsCartPlus />
+                      Add to Cart
+                    </button>
         </div>
       </div>
     </div>
