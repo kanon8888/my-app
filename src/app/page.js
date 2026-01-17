@@ -1,6 +1,8 @@
 import Banner from "@/components/Home/Banner";
 import FeaturesSection from "@/components/Home/FeaturesSection";
+import OfferSection from "@/components/Home/OfferSection";
 import Products from "@/components/Home/Products";
+import TestimonialsSection from "@/components/Home/TestimonialsSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,6 +16,12 @@ export default function Home() {
       </section>
       <section>
         <FeaturesSection></FeaturesSection>
+      </section>
+      <section>
+        <OfferSection></OfferSection>
+      </section>
+      <section>
+        <TestimonialsSection></TestimonialsSection>
       </section>
     </div>
   );
