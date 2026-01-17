@@ -11,53 +11,54 @@ const ProductCard = ({ product }) => {
 
   const handleViewDetails = () => {
     const isLoggedIn = document.cookie.includes("auth=true");
-
     if (!isLoggedIn) {
-      // ❌ login না থাকলে → login page
       router.push("/login");
     } else {
-      // ✅ login থাকলে → product details
       router.push(`/products/${id}`);
     }
   };
 
   return (
-    <div className="card bg-base-100 shadow-xl h-full flex flex-col">
-      <figure className="relative h-56 w-full">
+    <div className="card bg-white dark:bg-gray-900 shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl overflow-hidden flex flex-col h-full">
+      
+      {/* Image */}
+      <div className="relative h-64 w-full overflow-hidden group">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-      </figure>
+      </div>
 
-      <div className="card-body flex flex-col justify-between">
-        <div>
-          <h2 className="card-title">{title}</h2>
+      {/* Card Body */}
+      <div className="card-body flex flex-col justify-between p-5">
+        <div className="space-y-2">
+          <h2 className="card-title text-lg md:text-xl font-semibold">
+            {title}
+          </h2>
 
-          <div className="flex items-center gap-2 text-sm">
+          {/* Rating */}
+          <div className="flex items-center gap-1 text-sm">
             <FaStar className="text-yellow-400" />
             <span>{rating}</span>
-            <span className="text-gray-500">
-              ({reviews} reviews)
-            </span>
+            <span className="text-gray-500">({reviews} reviews)</span>
           </div>
 
-          <p className="text-lg font-bold mt-1">
-            ৳ {price}
-          </p>
+          {/* Price */}
+          <p className="text-lg font-bold text-primary mt-1">৳ {price}</p>
         </div>
 
-        <div className="card-actions flex items-center gap-3 mt-4">
-          <button className="btn btn-primary btn-sm flex items-center gap-2">
+        {/* Buttons */}
+        <div className="card-actions flex flex-col sm:flex-row gap-3 mt-4">
+          <button className="btn btn-primary btn-sm flex-1 flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
             <BsCartPlus />
             Add to Cart
           </button>
 
           <button
             onClick={handleViewDetails}
-            className="btn btn-outline btn-sm text-blue-500"
+            className="btn btn-outline btn-sm flex-1 text-blue-500 hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-200"
           >
             View Details
           </button>
