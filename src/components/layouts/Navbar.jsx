@@ -83,13 +83,7 @@ const Navbar = () => {
       
       <div className="navbar-end flex gap-2">
         
-        <button
-          onClick={toggleTheme}
-          className="btn btn-ghost btn-circle"
-          title="Toggle Theme"
-        >
-          {theme === "light" ? <FaMoon size={18} /> : <FaSun size={18} />}
-        </button>
+       
 
         
         {!isLoggedIn ? (
