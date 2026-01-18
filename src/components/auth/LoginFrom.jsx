@@ -68,7 +68,7 @@ const LoginForm = () => {
 
           <div className="divider">OR</div>
 
-          {/* Social Login using NextAuth */}
+          
           <SocialLogin />
 
           <p className="text-center text-sm text-gray-600 mt-6">
