@@ -30,5 +30,5 @@ This is a **Next.js 13+ project** featuring **Email/Password login** and **Googl
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/kanon8888/my-app
 cd your-project
