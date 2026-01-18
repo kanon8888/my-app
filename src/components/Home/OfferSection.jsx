@@ -10,7 +10,7 @@ const OfferSection = () => {
         <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
 
-                {/* Text Part */}
+                
                 <div className="flex-1 space-y-5 animate-text">
                     <h4 className="text-sm uppercase tracking-widest text-yellow-300">
                         Special Offer
@@ -31,7 +31,7 @@ const OfferSection = () => {
                     </button>
                 </div>
 
-                {/* Image Part */}
+                
                 <div className="flex-1 flex justify-center animate-image floating-img">
                     <Image
                         src="/image-off-1.webp"

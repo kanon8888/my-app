@@ -1,5 +1,6 @@
 import Banner from "@/components/Home/Banner";
 import FeaturesSection from "@/components/Home/FeaturesSection";
+import Newsletter from "@/components/Home/Newsletter";
 import OfferSection from "@/components/Home/OfferSection";
 import Products from "@/components/Home/Products";
 import TestimonialsSection from "@/components/Home/TestimonialsSection";
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
       <section>
         <TestimonialsSection></TestimonialsSection>
+      </section>
+      <section>
+        <Newsletter></Newsletter>
       </section>
     </div>
   );
