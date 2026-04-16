@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -10,7 +11,7 @@ const Banner = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50 via-white to-blue-100 -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
-        
+
         {/* Text */}
         <div className="flex-1 space-y-6 animate-text">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -21,9 +22,11 @@ const Banner = () => {
             Buy every toy with up to <span className="font-semibold">15% discount</span>.
           </p>
 
-          <button className="btn btn-primary btn-outline px-8 hover:scale-105 transition-transform duration-300">
-            Explore Products
-          </button>
+          <Link href="/products">
+            <button className="btn btn-primary btn-outline px-8 hover:scale-105 transition-transform duration-300">
+              Explore Products
+            </button>
+          </Link>
         </div>
 
         {/* Image */}
