@@ -80,7 +80,7 @@ const Navbar = () => {
       <div className="navbar-end flex gap-2">
         {!isLoggedIn ? (
           <Link href="/login">
-            <button className="btn btn-primary btn-outline">Login</button>
+            <button className="btn btn-primary btn-outline">Sign in</button>
           </Link>
         ) : (
           <button
@@ -91,6 +91,7 @@ const Navbar = () => {
           </button>
         )}
       </div>
+      
     </div>
   );
 };
