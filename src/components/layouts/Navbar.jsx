@@ -43,6 +43,10 @@ const Navbar = () => {
       <li>
         <NavLink href="/products">Products</NavLink>
       </li>
+      <li>
+        <NavLink href="/contact">contact</NavLink>
+      </li>
+      
     </>
   );
 
