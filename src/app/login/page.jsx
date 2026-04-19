@@ -14,7 +14,7 @@ const LoginPage = async () => {
       className="min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-6 px-4 sm:px-6 py-6"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3')",
+          "url('https://i.ibb.co.com/67jLXxCT/image.jpg')",
       }}
     >
       <div className="w-full max-w-md">
